@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" thread-count="2" parallel="tests" >
+    <parameter name="day" value="Monday" />
+    <parameter name="city" value="Texas" />
+
+    <test name="ChromeTest">
+
+        <parameter name="browser" value="CH" />
+
+        <classes>
+
+            <class name="org.example.Runner">
+
+            </class>
+
+        </classes>
+
+    </test>
+
+    <test name="FirefoxTest">
+
+        <parameter name="browser" value="FX" />
+
+        <classes>
+
+            <class name="org.example.Runner">
+
+            </class>
+
+        </classes>
+
+    </test>
+
+</suite>
